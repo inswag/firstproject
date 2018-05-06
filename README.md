@@ -10,3 +10,20 @@ Markdown은 무엇인가?
   
 - 여러분은 Markdown을 GitHub 상의 대부분의 장소에서 사용할 수 있다. 예) Gists, 문제에 대한 논평과 Pull 요청, .md 또는 .markdown 확장자를 갖는 파일
 
+
+문법 가이드
+- 개인 텍스트 파일 혹은 GitHub.com 상 어느 곳에서나 여러분이 사용할 수 있는 Markdown 문법 개요
+
+Header(컴퓨터에서 출력될 때 각 페이지 맨 윗부분에 자동으로 붙는 부분)
+# This is an <h1> tag 
+## This is an <h2> tag 
+###### This is an <h6> tag 
+
+Emphasis(강조)
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+_You **can** combine them_
