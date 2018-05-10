@@ -12,9 +12,9 @@ Markdown은 무엇인가?
 
 
 문법 가이드
-- 개인 텍스트 파일 혹은 GitHub.com 상 어느 곳에서나 여러분이 사용할 수 있는 Markdown 문법 개요
+개인 텍스트 파일 혹은 GitHub.com 상 어느 곳에서나 여러분이 사용할 수 있는 Markdown 문법 개요
 
-Header(컴퓨터에서 출력될 때 각 페이지 맨 윗부분에 자동으로 붙는 부분)
+- Header(컴퓨터에서 출력될 때 각 페이지 맨 윗부분에 자동으로 붙는 부분)
 # Create ( Size 1 : # + Name )
 ## Create ( Size 2 : # + # + Name )
 ### Create ( Size 3 : # + # + # + Name )
@@ -22,12 +22,12 @@ Header(컴퓨터에서 출력될 때 각 페이지 맨 윗부분에 자동으로
 ##### Create ( Size 5 : # + # + # + # + #+ Name)
 ###### Create ( Size 6 : # + # + # + # + # + # + Name)
 
-Emphasis(강조)
-*This text will be italic*
-_This will also be italic_
+- Emphasis(강조)
+ > *This text will be italic*
+ > _This will also be italic_
 
-### 글씨체 굵게 ( *x2 + Name + *x2 ) 
-Example. * + * + file explorer + * + * // Result. **file explorer**
+- 글씨체 굵게 ( *x2 + Name + *x2 ) 
+ > Example. * + * + file explorer + * + * // Result. **file explorer**
 
 **This text will be bold**
 __This will also be bold__
