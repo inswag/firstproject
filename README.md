@@ -27,8 +27,7 @@ Emphasis(강조)
 _This will also be italic_
 
 ### 글씨체 굵게 ( *x2 + Name + *x2 ) 
-Example. * + * + file explorer + * + *
-Result. **file explorer**
+Example. * + * + file explorer + * + * // Result. **file explorer**
 
 **This text will be bold**
 __This will also be bold__
