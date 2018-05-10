@@ -1,7 +1,8 @@
 # Markdown 공부해보기
 ### 7th iOS Development school
 
-Markdown은 GitHub 플랫폼 상에서 쓰여지는 모든 형태들을 다루기 위한 가볍고 사용하기 쉬운 문법입니다.  
+### Markdown은 GitHub 플랫폼 상에서 쓰여지는 모든 형태들을 다루기 위한 가볍고 사용하기 쉬운 문법입니다.  
+
 
 
 Markdown은 무엇인가?
