@@ -15,7 +15,7 @@ Fastcampus 7th iOS Development School
 
 
 ## Inswag's Swift Study in Fastcampus 7th iOS Development School
-* Lesson 1. 변수와 상수(Constants & Variables)
+* [Lesson 1. 변수와 상수(Constants & Variables)](http://atelier-chez-moi.tistory.com)
 * Lesson 2. 타입 어노테이션과 타입 인퍼런스(Type Annotation & Type Inference)
 * Lesson 3. 리터럴, 타입(Literals, Types)
 * Lesson 4. 연산자(Operator)
