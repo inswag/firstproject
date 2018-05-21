@@ -15,12 +15,12 @@ Fastcampus 7th iOS Development School
 
 
 ## Inswag's Swift Study in Fastcampus 7th iOS Development School
-* [Lesson 1. 변수와 상수(Constants & Variables)](http://atelier-chez-moi.tistory.com)
-* Lesson 2. 타입 어노테이션과 타입 인퍼런스(Type Annotation & Type Inference)
-* Lesson 3. 리터럴, 타입(Literals, Types)
-* Lesson 4. 연산자(Operator)
-* Lesson 5. 함수(Function)
-* Lesson 6. 타입 변환(Type Conversion)
+* [Lesson 1. 변수와 상수(Constants & Variables)](http://atelier-chez-moi.tistory.com/5?category=1001932)
+* [Lesson 2. 타입 어노테이션과 타입 인퍼런스(Type Annotation & Type Inference)](http://atelier-chez-moi.tistory.com/6?category=1001932)
+* [Lesson 3. 리터럴, 타입(Literals, Types)](http://atelier-chez-moi.tistory.com/8?category=1001932)
+* [Lesson 4. 연산자(Operator)](http://atelier-chez-moi.tistory.com/8?category=1001932)
+* [Lesson 5. 함수(Function)](http://atelier-chez-moi.tistory.com/8?category=1001932)
+* [Lesson 6. 타입 변환(Type Conversion)](http://atelier-chez-moi.tistory.com/8?category=1001932v)
 * Lesson 7. 조건문(Conditional Statement)
 * Lesson 8. 반복문(Loops)
 * Lesson 9. 튜플(Tuple)
