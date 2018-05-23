@@ -23,7 +23,7 @@ Fastcampus 7th iOS Development School
 > * [Lesson 4. 연산자(Operator)](http://atelier-chez-moi.tistory.com/8?category=1001932)
 > * [Lesson 5. 함수(Function)](http://atelier-chez-moi.tistory.com/8?category=1001932)
 > * [Lesson 6. 타입 변환(Type Conversion)](http://atelier-chez-moi.tistory.com/8?category=1001932v)
-> * Lesson 7. 조건문(Conditional Statement)
+> * [Lesson 7. 조건문(Conditional Statement)](http://atelier-chez-moi.tistory.com/15?category=1001932)
 > * Lesson 8. 반복문(Loops)
 > * Lesson 9. 튜플(Tuple)
 > * Lesson 10. 전달 제어문(Control Transfer Statement)
