@@ -1,5 +1,5 @@
 ## Private Info
-Birth : 1991.07.11
+Birth : 1991. 07. 11
 
 Major : French Studies, Locality-based Interdisciplinary Program in Hankuk University of Foreign Studies
 
