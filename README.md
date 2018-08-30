@@ -3,7 +3,7 @@ Birth : 1991. 07. 11
 
 Major : French Studies, Locality-based Interdisciplinary Program in Hankuk University of Foreign Studies
 
-Language : Korean, French, English, ''Swift''
+Language : Korean, French, English, and 'Swift'
 
 Facebook : http://www.facebook.com/nameisssu
 
@@ -11,8 +11,10 @@ blog : http://atelier-chez-moi.tistory.com/
 
 ## 이력
 Fastcampus 7th iOS Development School
+* 2018/05/08 ~ 2018/08/24
 
-* 2018/05/08 ~ 
+Fastcampus 7th school Hackathon - 1st
+* 2018/07/20
 
 
 ## Inswag's Swift Study in Fastcampus 7th iOS Development School
