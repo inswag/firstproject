@@ -22,3 +22,7 @@
  * [객체 지향 프로그래밍(Object Oriented Programming)](http://atelier-chez-moi.tistory.com/26?category=1001931)
  * [코코아 터치 프레임워크(Cocoa Touch Framework)](http://atelier-chez-moi.tistory.com/28?category=1004941)
  * [앱 생명 주기(App Life Cycle)](http://atelier-chez-moi.tistory.com/29?category=1004941)
+
+
+### Computer Basic
+ * [스레드(Thread)](http://atelier-chez-moi.tistory.com/36)
