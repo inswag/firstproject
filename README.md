@@ -14,7 +14,7 @@
  * [열거형(Enumerations)](http://atelier-chez-moi.tistory.com/21?category=1001932)
  * 집단 자료형(Collection) -  [배열(Array)](http://atelier-chez-moi.tistory.com/22?category=1001932), [집합(Set)](http://atelier-chez-moi.tistory.com/23?category=1001932), [딕셔너리(Dictionary)](http://atelier-chez-moi.tistory.com/24?category=1001932)
  * 클래스(Class)
- * 프로퍼티(Property)
+ * [프로퍼티(Properties)](https://github.com/inswag/iOS-Development-Swift/tree/master/Property)
  * [접근 제어(Access Control)](http://atelier-chez-moi.tistory.com/12?category=1001932)
  * [제이슨(JSON)](http://atelier-chez-moi.tistory.com/30?category=1001932) 
  *  Auto Reference Counting(ARC) - Apple 문서 번역 [PART 1](http://atelier-chez-moi.tistory.com/37) / [PART 2](http://atelier-chez-moi.tistory.com/40) / [PART 3](http://atelier-chez-moi.tistory.com/41)
