@@ -395,7 +395,24 @@ stepCounter.totalSteps = 896
 
 <br>
 
+### 전역(Global) 변수와 지역(Local) 변수 
 
+<br>
 
+The capabilities described above for computing and observing properties are also available to global variables and local variables. **전역 변수**는 어떤 함수, 메소드, 클로저, 타입 맥락(context) 밖에서 정의되는 변수이고, **지역 변수**는 함수, 메소드, 클로저 맥락(context) 내에서 정의되는 변수입니다. 
+
+여러분이 이전 챕터에서 접했던 전역 변수와 지역 변수들은 모두 값을 가지고 있는 변수들(Stored variables)이었습니다. 저장 프로퍼티와 같은 *Stored variables* 은 어느 타입의 값에 대한 저장 공간을 제공하며 값이 설정되고 검색되도록 허용합니다. 
+
+그러나, 여러분은 연산을 통해 값을 가지는 변수(Computed variables) 정의할 수 있으며, 값을 저장하고 있는 변수(stored variables)를 위한 옵저버 또한 전역 또는 로컬 범위에서 정의할 수 있습니다. 연산을 통해 값을 가지는 변수는 값을 저장하기 보다는 계산하며, 얘내들은 연산 프로퍼티와 같은 방식으로 쓰입니다(written).
+
+<br>
+
+>NOTE
+>
+>전역 상수와 변수는 항상 지연되게(lazily) 계산됩니다. 지연 저장 프로퍼티와 유사한 방법이죠. 지연 저장 프로퍼티와는 달리, 전역 상수와 변수는 **lazy 수식어가 표기될 필요는 없습니다.**
+>
+>지역 상수와 변수는 **절대 지연되게 계산되지 않습니다** !
+
+<br>
 
 <br>
