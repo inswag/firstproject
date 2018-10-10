@@ -235,9 +235,13 @@ print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 
 이 예시는 3개의 구조체를 정의하고 있어요, 기하학적 모양으로 작동(for working with geometric shapes)하는 구조체 입니다 :
 
+<br>
+
 * Point 는 점의 x 및 y 좌표를 캡슐화합니다.
 * Size 는 width 와 height 값을 캡슐화합니다.
 * Rect 는 원점(origin point)과 사이즈를 사용해 사각형을 정의합니다.
+
+<br>
 
 *Rect* 구조체는 *center* 라 불리는 연산 프로퍼티를 또한 제공합니다. Rect 의 현재 센터 포지션은 항상 origin 과 size 로부터 결정되며, 따라서 여러분은 센터 좌표를 명시적인 *Point* 값으로 저장할 필요가 없습니다. 대신, *Rect* 는 사용자 정의 getter 와 setter 를 *center* 라 불리는 변수로 된(var) 연산 프로퍼티에 정의하였습니다. 마치 실제로 저장된 프로퍼티인 것처럼 사각형의 센터를 사용하여 작업할 수 있게 해줍니다.  
 
@@ -245,11 +249,17 @@ print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 
 *square* 변수의 *center* 프로퍼티는 점 문법(dot syntax)를 통해(square.center) 접근할 수 있습니다. 이는 *center* 의 getter 가 호출되도록 하며, 현재 프로퍼티 값을 검색하기 위함입니다. 존재하는 값을 리턴하기보다는, getter 는 실제로 연산하고 정사각형의 센터를 나타내기 위한 새로운 *Point* 를 리턴합니다. 위에서 볼 수 있었던 것처럼, getter 는 정확히 센터 좌표 (5, 5) 를 리턴하고 있습니다. 
 
-*center* 프로퍼티는 따라서 새 값 (15, 15) 로 설정되며, 정사각형을 오른쪽 상단으로 움직이게 하며, 아래의 다이어그램의 오렌지 색 정사각형에 의해 새로운 위치가 보여지고 있습니다. *center* 프로퍼티를 설정하는 것은 *center* 의 setter 를 호출하며, 이는 저장 프로퍼티 *origin* 의 x와 y 값 수정합니다. 그리고 사각형은 새로운 위치로 움직이게 되죠. 
+*center* 프로퍼티는 그 다음 새 값 (15, 15) 로 설정되며, 정사각형을 오른쪽 상단으로 움직이게 하며, 아래의 다이어그램의 오렌지 색 정사각형에 의해 새로운 위치가 보여지고 있습니다. *center* 프로퍼티를 설정하는 것은 *center* 의 setter 를 호출하며, 이는 저장 프로퍼티 *origin* 의 x와 y 값을 수정합니다. 그리고 사각형은 새로운 위치로 움직이게 되죠. 
+
+<br>
 
 ![Diagram](https://i.imgur.com/RmkcYsP.png)
 
+<br>
+
 #### 속기 Setter 선언(Shorthand Setter Declaration)
+
+<br>
 
 만약 연산 프로퍼티의 Setter 가 설정할 새로운 값에 대한 이름을 정의하지 않을 경우, *newValue* 라는 디폴트 이름이 사용된다. *Rect* 구조체의 대안 버전이 여기 있는데, 속기 표기법(shorthand notation)의 이점을 가져봅시다 : 
 
@@ -270,15 +280,25 @@ struct AlternativeRect {
     }
 ```
 
+<br>
+
 #### 읽기 전용 연산 프로퍼티(Read-Only Computed Properties)
 
+<br>
+
 getter 를 갖지만 setter 가 없는 연산 프로퍼티는 *Read-Only Computed Properties* 로 알려져 있습니다. 읽기 전용 프로퍼티는 항상 값을 리턴하며, 점 문법을 통해 접근할 수 있지만, 그러나 다른 값이 설정될 수는 없습니다.
+
+<br>
 
 >NOTE
 >
 >여러분은 읽기 전용 프로퍼티를 포함한 모든 연산 프로퍼티를 변수로(var) 선언한 프로퍼티를 사용해야만 합니다. 왜냐하면 얘내 값은 고정되어있지 않기 때문이죠. let 이라는 것은 오직 상수로 선언된 프로퍼티에만 사용될 수 있고, 얘내들은 값이 한번 인스턴스의 초기화의 일부분으로 설정된 이상(once they are set as part of instance initialization) 변화할 수 없다는 것을 나타냅니다.
 
+<br>
+
 읽기 전용 프로퍼티의 선언을 get 키워드와 {중괄호} 를 제거함으로서 단순화 할 수 있습니다 :
+
+<br>
 
 ```Swift
 struct Cuboid {
@@ -292,6 +312,90 @@ print("the volume of fourByFiveByTwo is \(fourByFiveByTwo.volume)")
 // Prints "the volume of fourByFiveByTwo is 40.0"
 ```
 
+<br>
+
 위의 예시는 *Cuboid* 라는 새로운 구조체를 정의하고 있어요. 3차원의 사각형 상자를 *width*, *height*, *depth* 프로퍼티로 나타내고 있죠. 이 구조체는 또한 *volume* 이라 불리는 읽기 전용 연산 프로퍼티를 가지고 있는데, 얘는 계산하고 현재 cuboid의 볼륨을 리턴하죠. *volume* 이 setter로 설정되기에는 뭔가 적절하지 않아요, 그것은 특정 *volume* 값에 사용되어야 하는 width, height, depth 의 어떤 값을 사용해야 하는지 다소 모호하기 때문이죠. 그렇기는 하지만, *Cuboid* 가 읽기 전용 프로퍼티를 제공하는 것은 유용하죠. 외부 유저들에게 얘의 현재 계산된 부피(volume)를 발견하게끔 해주니까요.
 
+<br>
 
+### 프로퍼티 옵저버(Property Observers)
+
+<br>
+
+프로퍼티 옵저버는 프로퍼티의 값을 관찰하며 변화에 응답해요. 프로퍼티 옵
+저버는 프로퍼티의 값이 정해질 때마다 호출되요, 새로운 값이 프로퍼티의 현재의 값과 같더라도 말이죠.
+
+여러분이 정의한 어떠한 저장 프로퍼티에든 프로퍼티 옵저버를 추가할 수 있어요. 아! 지연 저장 프로퍼티는 제외입니다. 또한 서브클래스에서 프로퍼티를 오버라이딩해서 상속된 어떠한 프로퍼티(저장이든 연산이든)에도 프로퍼티 옵저버를 추가할 수 있어요. 오버라이드 되지 않은 연산 프로퍼티에 대해서는 프로퍼티 옵저버를 정의할 필요는 없어요, 왜냐하면 여러분은 연산 프로퍼티의 setter 에서 값의 변화에 대응하고 관찰할 수 있기 때문이죠. 프로퍼티의 오버라이딩(Overriding)은 상속(Inheritance)에서 다루고 있습니다.
+
+여러분은 프로퍼티에 두 개의 옵저버를 둘 중 하나 혹은 둘 다 정의해서 사용할 수 있어요.
+
+* *willSet* 은 값이 저장되기 이전에만 단지 호출됩니다.
+* *didSet* 은 새로운 값이 저장된 후에 즉시 호출됩니다. 
+
+만약 여러분이 *willSet* 옵저버를 구현한다면, 새로운 프로퍼티 값은 상수 파라미터(constant parameter)로 전달됩니다. 여러분은 *willSet* 구현의 일부에서 이 파라미터의 이름을 특정지을 수도 있구요.
+여러분이 파라미터 이름과 괄호를 구현내에서 작성하길 원치 않는다면, 파라미터는 *newValue* 라는 디폴트 파라미터 이름으로 사용이 가능하도록 만들어 집니다. 
+
+유사하게, 여러분이 *didSet* 옵저버를 구현한다면, 기존의 프로퍼티 값을 포함하는 상수 파라미터가 전달됩니다. 여러분은 파라미터의 이름을 지을 수 있고 혹은 *oldValue* 라는 디폴트 파라미터 이름을 사용할 수 있습니다. 만약 여러분이 값을 didSet 옵저버를 가지고 있는 프로퍼티에 값을 할당한다면, 여러분이 할당한 새로운 값은 방금 막 설정한 값을 대체합니다. 
+
+<br>
+
+>NOTE
+>
+>슈퍼클래스 프로퍼티의 *willSet* 과 *didSet* 옵저버는 슈퍼클래스 이니셜라이저가 호출된 후, 서브클래스 이니셜라이저 내에서 프로퍼티가 설정되면 호출됩니다. 또 얘내들은 슈퍼클래스 이니셜라이저가 호출되기 전, 클래스가 클래스 자신의 프로퍼티를 설정하는 동안에는 호출되지 않습니다. 
+>
+>이니셜라이저 델리게이션이 더 궁금하다면 Initialization(초기화) 의 값 타입 그리고 클래스 타입에서의 이니셜라이저 델리게이션을 참고하세요 :)
+
+<br>
+
+*willSet* 과 *didSet* 의 실전 예시를 볼까요? 다음의 예시는 *StepCounter* 라 불리는 새 클래스를 정의하고 있고, 사람이 걷는 동안의 총 발걸음 수를 추적합니다. 이 클래스는 만보계(pedometer) 또는 다른 단계 카운터(other step counter)의 입력 데이터와 함께 일상 루틴 중 사람의 운동을 추적하는 데 사용될 수 있습니다.
+
+<br>
+
+```Swift
+class StepCounter {
+    var totalSteps: Int = 0 {
+        willSet(newTotalSteps) {
+            print("About to set totalSteps to \(newTotalSteps)")
+        }
+        didSet {
+            if totalSteps > oldValue  {
+                print("Added \(totalSteps - oldValue) steps")
+            }
+        }
+    }
+}
+
+let stepCounter = StepCounter()
+stepCounter.totalSteps = 200
+// About to set totalSteps to 200
+// Added 200 steps
+stepCounter.totalSteps = 360
+// About to set totalSteps to 360
+// Added 160 steps
+stepCounter.totalSteps = 896
+// About to set totalSteps to 896
+// Added 536 steps
+```
+
+<br>
+
+*StepCounter* 클래스는 *totalSteps* 프로퍼티를 Int 타입으로 선언해요. 이것은 *willSet* 과 *didSet* 옵저버를 가지고 있는 저장 프로퍼티이죠. 
+
+*totalSteps* 의 *willSet* 과 *didSet* 옵저버는 프로퍼티에 새로운 값이 할당될 때마다 호출됩니다. 이것은 현재의 값이 새로운 값과 같더라도 똑같습니다. (앞서 배운 연산 프로퍼티의 setter 도 그랬었죠?) 
+
+위 예시의 *willSet* 옵저버는 사용자 정의 파라미터인 *newTotalSteps* 를 다가오는 새 값을 위해서 사용해요. 이 예시에서, 그것은 단순히 설정하려고 하는 값을 출력하죠.
+
+*didSet* 옵저버는 *totalSteps* 의 값이 업데이트된 후에야 호출되요. 얘는 *totalSteps* 의 새 값을 기존 값에 대해 비교를 하죠. 만약 총 걸음의 수가 증가되었다면, 메시지는 얼마나 많이 새로운 걸음이 발생했었는지를 나타내기 위해 프린트 됩니다. *didSet* 옵저버는 기존 값에 대해 사용자 정의 파라미터명을 제공하지 않고, 대신에 *oldValue* 라는 디폴트 이름이 사용됩니다. 
+
+<br>
+
+>NOTE
+>
+>만약 여러분이 in-out 파라미터를 가진 함수에 옵저버를 가지고 있는 프로퍼티를 전달하려면, *willSet* 과 *didSet* 옵저버는 항상 호출됩니다. 이것은 in-out 파라미터를 위한 copy-in copy-out 메모리 모델 때문이죠 : 값은 항상 함수의 끝에 있는 프로퍼티에 다시 기록됩니다(written). 이 말에 대해 더 알아보고 싶다면 인-아웃 파라미터(In-Out Parameters) 에 대해 찾아보세요 :)
+
+<br>
+
+
+
+
+<br>
